@@ -14,6 +14,7 @@
 		852E0891794923EE7583C621 /* ofxInputField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44B351490B620D04E1E7C52D /* ofxInputField.cpp */; };
 		853E0BA2F448076739446874 /* ofxColorPicker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 181D363B6DD54D1FA6309C43 /* ofxColorPicker.cpp */; };
 		856AA354D08AB4B323081444 /* ofxBaseGui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9604B925D32EE39065747725 /* ofxBaseGui.cpp */; };
+		A225ABCB24C89805003D078B /* ripple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A225ABC924C89805003D078B /* ripple.cpp */; };
 		A2BCD95D24C72B7900F6CCAE /* ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A2BCD95B24C72B7900F6CCAE /* ball.cpp */; };
 		A2BCD96024C7329200F6CCAE /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A2BCD95E24C7329200F6CCAE /* player.cpp */; };
 		B266578FC55D23BFEBC042E7 /* ofxGuiGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECF8674C7975F1063C5E30CA /* ofxGuiGroup.cpp */; };
@@ -51,6 +52,8 @@
 		89449E3044D456F7DE7BEA14 /* ofxPanel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxPanel.h; path = ../../../addons/ofxGui/src/ofxPanel.h; sourceTree = SOURCE_ROOT; };
 		907C5B5E104864A2D3A25745 /* ofxToggle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxToggle.cpp; path = ../../../addons/ofxGui/src/ofxToggle.cpp; sourceTree = SOURCE_ROOT; };
 		9604B925D32EE39065747725 /* ofxBaseGui.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxBaseGui.cpp; path = ../../../addons/ofxGui/src/ofxBaseGui.cpp; sourceTree = SOURCE_ROOT; };
+		A225ABC924C89805003D078B /* ripple.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ripple.cpp; sourceTree = "<group>"; };
+		A225ABCA24C89805003D078B /* ripple.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ripple.hpp; sourceTree = "<group>"; };
 		A2BCD95B24C72B7900F6CCAE /* ball.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ball.cpp; sourceTree = "<group>"; };
 		A2BCD95C24C72B7900F6CCAE /* ball.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ball.hpp; sourceTree = "<group>"; };
 		A2BCD95E24C7329200F6CCAE /* player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = player.cpp; sourceTree = "<group>"; };
@@ -613,6 +616,8 @@
 				A2BCD95C24C72B7900F6CCAE /* ball.hpp */,
 				A2BCD95E24C7329200F6CCAE /* player.cpp */,
 				A2BCD95F24C7329200F6CCAE /* player.hpp */,
+				A225ABC924C89805003D078B /* ripple.cpp */,
+				A225ABCA24C89805003D078B /* ripple.hpp */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -723,6 +728,7 @@
 				B266578FC55D23BFEBC042E7 /* ofxGuiGroup.cpp in Sources */,
 				A2BCD96024C7329200F6CCAE /* player.cpp in Sources */,
 				852E0891794923EE7583C621 /* ofxInputField.cpp in Sources */,
+				A225ABCB24C89805003D078B /* ripple.cpp in Sources */,
 				483908258D00B98B4BE69F07 /* ofxLabel.cpp in Sources */,
 				F285EB3169F1566CA3D93C20 /* ofxPanel.cpp in Sources */,
 				837220E80EB56CD44AD27F2A /* ofxSlider.cpp in Sources */,

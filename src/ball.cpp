@@ -30,22 +30,50 @@ void ball::update(){
         //ボールの速度を初期値に戻す
         vel.x = 3;
         
+        //エフェクトで波紋を出す
+        ripple tmpRipple;
+        tmpRipple.pos.set(pos.x, pos.y);
+        ripples.push_back(tmpRipple);
+        
         //体力減らす
         hp[0] --;
     }else if(pos.x > ofGetWidth()){
         //ボールの速度を初期値に戻す
         vel.x = -3;
         
+        
+        //エフェクトで波紋を出す
+        ripple tmpRipple;
+        tmpRipple.pos.set(pos.x, pos.y);
+        ripples.push_back(tmpRipple);
+        
         //体力減らす
         hp[1] --;
     }
+    
     if(pos.y < 0 || pos.y > ofGetHeight()) vel.y *= -1.0;
+    
+    
+    //エフェクトupdate
+    for(int i = 0; i < ripples.size(); i++){
+        ripples[i].update();
+        
+        if(ripples[i].size > 500){
+            ripples.erase(ripples.begin() + i);
+        }
+    }
 }
 
 
 void ball::draw(){
     ofSetColor(color);
     ofDrawCircle(pos.x, pos.y, radius);
+    
+    
+    //エフェクトdraw
+    for(int i = 0; i < ripples.size(); i++){
+        ripples[i].draw();
+    }
 }
 
 void ball::setColor(ofColor col){

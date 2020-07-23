@@ -11,6 +11,8 @@
 #include <stdio.h>
 #include "ofMain.h"
 
+#include "ripple.hpp"
+
 class ball{
     
 public:
@@ -34,6 +36,8 @@ public:
     ball();
     
     int hp[2];
+    
+    vector<ripple> ripples;
 };
 
 #endif /* ball_hpp */
