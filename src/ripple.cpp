@@ -13,23 +13,20 @@ ripple::ripple(){
 }
 
 void ripple::setup(){
-//    pos.set(0, ofGetHeight()/2);
-//    vel.set(-3, -1);
-    
     size = 0;
     
-    setColor(ofColor(255));
     setRadius(size);
 }
 
 void ripple::update(){
     
-    size += 2;
+    size += 3;
     setRadius(size);
 }
 
 
 void ripple::draw(){
+    ofSetColor(color);
     ofNoFill();
     ofDrawCircle(pos.x, pos.y, radius);
     ofFill();

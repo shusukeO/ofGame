@@ -49,11 +49,11 @@ void ofApp::draw(){
     } else if (ball.hp[0] >0){
         ofDrawBitmapString("WIN", 50, 50);
         ofDrawBitmapString("LOSE", ofGetWidth() - 100, 50);
-        ofDrawBitmapString("SPACE->RESET", ofGetWidth()/2, 50);
+        ofDrawBitmapString("FINISH!! SPACE->RESET", ofGetWidth()/2 -70, 50);
     }else{
         ofDrawBitmapString("LOSE", 50, 50);
         ofDrawBitmapString("WIN", ofGetWidth() - 100, 50);
-        ofDrawBitmapString("SPACE->RESET", ofGetWidth()/2, 50);
+        ofDrawBitmapString("FINISH!! SPACE->RESET", ofGetWidth()/2 - 70, 50);
     }
     
     

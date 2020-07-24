@@ -33,6 +33,7 @@ void ball::update(){
         //エフェクトで波紋を出す
         ripple tmpRipple;
         tmpRipple.pos.set(pos.x, pos.y);
+        tmpRipple.setColor(ofColor(255, 0, 255));
         ripples.push_back(tmpRipple);
         
         //体力減らす
@@ -45,20 +46,34 @@ void ball::update(){
         //エフェクトで波紋を出す
         ripple tmpRipple;
         tmpRipple.pos.set(pos.x, pos.y);
+        tmpRipple.setColor(ofColor(0, 0, 255));
         ripples.push_back(tmpRipple);
         
         //体力減らす
         hp[1] --;
+    }else
+        
+    {
+        if(hp[0] > 0 && hp[1] > 0){
+            //エフェクトで波紋を出す
+            ripple tmpRipple;
+            tmpRipple.pos.set(pos.x, pos.y);
+            tmpRipple.setColor(ofColor(0, 255, 0));
+            ripples.push_back(tmpRipple);
+        }
+        
     }
-    
+
     if(pos.y < 0 || pos.y > ofGetHeight()) vel.y *= -1.0;
+    
     
     
     //エフェクトupdate
     for(int i = 0; i < ripples.size(); i++){
         ripples[i].update();
         
-        if(ripples[i].size > 500){
+        //エフェクトの削除
+        if(ripples[i].size > 700){
             ripples.erase(ripples.begin() + i);
         }
     }
