@@ -20,6 +20,7 @@ void ball::setup(){
     
     //各チームの体力初期化
     hp[0] = hp[1] = 15;
+    isDefRipple = false;
 }
 
 void ball::update(){
@@ -38,6 +39,8 @@ void ball::update(){
         
         //体力減らす
         hp[0] --;
+        
+        isDefRipple = false;
     }else if(pos.x > ofGetWidth()){
         //ボールの速度を初期値に戻す
         vel.x = -3;
@@ -51,10 +54,12 @@ void ball::update(){
         
         //体力減らす
         hp[1] --;
+        
+        isDefRipple = false;
     }else
         
     {
-        if(hp[0] > 0 && hp[1] > 0){
+        if(hp[0] > 0 && hp[1] > 0 && isDefRipple){
             //エフェクトで波紋を出す
             ripple tmpRipple;
             tmpRipple.pos.set(pos.x, pos.y);

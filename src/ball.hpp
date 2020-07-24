@@ -38,6 +38,8 @@ public:
     int hp[2];
     
     vector<ripple> ripples;
+    
+    bool isDefRipple;
 };
 
 #endif /* ball_hpp */

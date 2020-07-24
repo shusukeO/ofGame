@@ -29,6 +29,8 @@ void ofApp::update(){
     for(int i= 0; i < players.size(); i++){
         if(players[i].pos.distance(ball.pos) < players[i].radius){
             ball.vel.x *= -1.1;
+            
+            ball.isDefRipple = true;
         }
     }
     
@@ -109,7 +111,7 @@ void ofApp::keyPressed(int key){
     }
     
     //スコアリセット
-    if(key == ' ' && (ball.hp[0] < 0 || ball.hp[1] < 0)){
+    if(key == ' ' && (ball.hp[0] <= 0 || ball.hp[1] <= 0)){
         ball.hp[0] = ball.hp[1] = 15;
     }
     
