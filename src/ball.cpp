@@ -38,7 +38,7 @@ void ball::update(){
         ripples.push_back(tmpRipple);
         
         //体力減らす
-        hp[0] --;
+        if(hp[0] > 0 && hp[1] > 0) hp[0] --;
         
         isDefRipple = false;
     }else if(pos.x > ofGetWidth()){
@@ -53,7 +53,7 @@ void ball::update(){
         ripples.push_back(tmpRipple);
         
         //体力減らす
-        hp[1] --;
+        if(hp[0] > 0 && hp[1] > 0) hp[1] --;
         
         isDefRipple = false;
     }else
