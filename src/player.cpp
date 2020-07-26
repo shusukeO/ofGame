@@ -16,7 +16,7 @@ void player::setup(){
 //    pos.set(0, ofGetHeight()/2);
 //    vel.set(-3, -1);
 //    setColor(ofColor(255));
-    setRadius(25);
+    setRadius(35);
 }
 
 void player::update(){

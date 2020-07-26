@@ -88,32 +88,32 @@ void ofApp::keyPressed(int key){
     //プレイヤー1操作
     switch (key) {
         case 'w':
-             players[0].vel.set(0, -5);
+             players[0].vel.set(0, -7);
             break;
         case 's':
-             players[0].vel.set(0, 5);
+             players[0].vel.set(0, 7);
             break;
         case 'd':
-             players[0].vel.set(5, 0);
+             players[0].vel.set(7, 0);
             break;
         case 'a':
-             players[0].vel.set(-5, 0);
+             players[0].vel.set(-7, 0);
             break;
     }
     
     //プレイヤー2操作
     switch (key) {
         case OF_KEY_UP:
-            players[1].vel.set(0, -5);
+            players[1].vel.set(0, -7);
             break;
         case OF_KEY_DOWN:
-             players[1].vel.set(0, 5);
+             players[1].vel.set(0, 7);
             break;
         case OF_KEY_RIGHT:
-             players[1].vel.set(5, 0);
+             players[1].vel.set(7, 0);
             break;
         case OF_KEY_LEFT:
-             players[1].vel.set(-5, 0);
+             players[1].vel.set(-7, 0);
             break;
         
     }
